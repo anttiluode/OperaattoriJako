@@ -96,6 +96,8 @@ dJ/dV(t)
 The nonlinear law itself does not have to be NMDA. Jako is agnostic to how the
 base trajectory was produced.
 
+For generic equilibria, **[fixed_point.py](fixed_point.py)** exposes the same idea directly in fixed-point form, including exact-vs-Jacobian-free gradient comparison, sign flips, cosine alignment and optional Neumann feedback-depth terms. See **[USES.md](USES.md)** for non-neuron applications including implicit networks, bilevel learning, closed-loop control, differentiable optimization layers, global illumination and equilibrium systems.
+
 ## The local calculation
 
 At each time step,
